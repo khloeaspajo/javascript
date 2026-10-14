@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -22,7 +23,11 @@
   <div>
     <p id="ex1">1 - Alterar o texto do "Menu 1" para Item 1.</p>
     <p id="ex2">2 - Alterar o texto do "Menu 2" para "Item 2" através da Tag.</p>
-    <p id="ex3">3 - Inserir parênteses () nos comandos da classe "comandoss".</p>
+    <p id="ex3">3 - Inserir parênteses () nos comandos da classe "comandos".</p>
+    <p id="ex4">4 - Alterar a cor do id "ex1", do segundo item da classe "comandos" para verde.</p>
+    <p id="ex5">5 - Colocar uma borda na div com o querySelector.</p>
+    <p id="ex6">6 - Alterar o tamanho do texto do primeiro exercicio utilizando querySelector.</p>
+    <p id="ex7">7 - ".</p>
   </div>
   <script>
     //1 
@@ -33,6 +38,11 @@
     document.getElementsByClassName("comandos")[0].innerHTML = document.getElementsByClassName("comandos")[0].innerHTML + "()";
     document.getElementsByClassName("comandos")[1].innerHTML = document.getElementsByClassName("comandos")[1].innerHTML + "()";
     document.getElementsByClassName("comandos")[2].innerHTML = document.getElementsByClassName("comandos")[2].innerHTML + "()";
+    //4
+    document.getElementById("ex1").style.color = "green";
+    document.getElementsByClassName("comandos")[1].style.color = "green";
+    //5
+    document.querySelector("div").style.border = "3px dashed red";
   </script>
 </body>
 </html>
