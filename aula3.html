@@ -13,6 +13,8 @@
       <p>Menu 3</p>
     </nav>
   </header>
+  <button>Ocultar div</button>
+  <button>Mostrar div</button>
   <main>
     <h2 id="titulo">Aula 3 - Javascript DOM</h2>
     <p class="comandos">getElementById</p>
@@ -28,7 +30,6 @@
     <p id="ex5">5 - Colocar uma borda na div com o querySelector.</p>
     <p id="ex6">6 - Alterar o tamanho do texto do primeiro exercicio utilizando querySelector.</p>
     <p id="ex7">7 - Alterar o texto para negrito do elemento da primeira classe "comandos" utilizando o querySelector.</p>
-    <p id="ex8">8 - </p>
     <p id="ex8">8 - Alterar a div: arredondar as bordas, cor do fundo rosa claro, cor do texto vermelho.</p>
     <p id="ex9">9 - </p>
     <p id="ex10">10 - </p>
@@ -57,6 +58,11 @@
     document.getElementsByTagName("div")[0].style.borderRadius = "30px";
     document.querySelector("div").style.backgroundColor = "lightpink";
     document.querySelector("div").style.color = "red";
+    //document.getElementsByTagName("div")[0].style.borderRadius = "30px";
+    let div = document.querySelector("div").style;
+    div.borderRadius = "30px";
+    div.backgroundColor = "lightpink";
+    div.color = "red";
   </script>
 </body>
 </html>
